@@ -360,7 +360,7 @@ a.button5:hover {
   }
 }
 
-#machine1 {
+.machine {
   background: #eeeeee;
   padding-left: 5em;
   padding-right: 5em;

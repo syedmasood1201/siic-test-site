@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <!-- css stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/slots.css" />
-
     <!-- bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -44,15 +42,15 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
     <!-- Navbar  -->
     <header class="header">
         <div class="cursor"></div>
-        <!-- <div class="parallax"> -->
           <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
               <div class="logo">
-                <a href="index.html">
+                <a href="admin.html">
                   <img src="img/SRM Fabab.png" alt="starlax" />
                 </a>
               </div>
@@ -85,256 +83,57 @@
                     >
                   </li>&nbsp;&nbsp;
                   <li class="nav-item">
-                    <!-- <a
-                      href="#"
-                      class="nav-link text-uppercase font-weight-bold"
-                      >Log Out</a
-                    > -->
-                    <a href="#" class="button1">Log Out</a>
+                    <a href="index.html" class="button1">Log Out</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
+        </div>
     </header>
+    <!-- <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">MONDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slottu.html">TUESDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slotw.html">WEBNESDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slotth.html">THURSDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slotf.html">FRIDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slotsa.html">SATURDAY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slotsu.html">SUNDAY</a>
+      </li>
+    </ul> -->
     <div class="headingSlot" id="slotHead">
       <h1>SLOTS</h1>
     </div>
-    <div class="d-flex p-2 bd-highlight" id="machine1">
-      <br>
-      <h5> <a href="#" class="text-dark">HandSaw</a></h6>&nbsp;&nbsp;
-        <p class="small text-muted mb-0">#HSFBSIIC01</p>
-        
-        <div class="row" id="machineHealthBox">
-            <!-- Gallery item -->
-            <br>
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4" id="9_10">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                <h6> <a href="#" class="text-dark">9:00am - 10:00am</a></h6>
-                <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                <br>
-                <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
     
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">10:00am - 11:00am</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-    
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">11:00am - 12:00am</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
 
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">12:00pm - 01:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">01:00pm - 02:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">02:00pm - 03:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">03:00pm - 04:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-    
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">04:00pm - 05:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-        </div>
+    <div id="slotData">
+      
     </div>
-    <br><br>
-    <div class="d-flex p-2 bd-highlight" id="machine1">
-      <br>
-      <h5> <a href="#" class="text-dark">HandSaw</a></h6>&nbsp;&nbsp;
-        <p class="small text-muted mb-0">#HSFBSIIC01</p>
-        
-        <div class="row" id="machineHealthBox">
-            <!-- Gallery item -->
-            <br>
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                <h6> <a href="#" class="text-dark">9:00am - 10:00am</a></h6>
-                <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                <br>
-                <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
     
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">10:00am - 11:00am</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-    
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">11:00am - 12:00am</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">12:00pm - 01:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">01:00pm - 02:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">02:00pm - 03:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">03:00pm - 04:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-    
-          <!-- Gallery item -->
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-            <div class="bg-white rounded shadow-sm">
-              <div class="p-4">
-                  <h6> <a href="#" class="text-dark">04:00pm - 05:00pm</a></h6>
-                  <!-- <p class="small text-muted mb-0">#HSFBSIIC01</p> -->
-                  <br>
-                  <a href="#" id="healthButton1">STATUS</a>
-              </div>
-            </div>
-          </div>
-          <!-- End -->
-        </div>
-    </div>
     <br>
+    
     <!-- End -->
+    <!-- genral scripts  -->
     <!-- ////////////footer///////////////////// -->
     <!-- Site footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-6">
-                    <h6>The Prōject Team</h6>
-                    <h4><small>Expanding the Possibilities and Evolving Wisely</small></h4>
+                  <h6><small>Access Control and Predictive Maintenance</small></h6>
                 </div>
                 <div class="col-xs-6 col-md-2">
                 </div>
@@ -357,23 +156,28 @@
                         Crafted by
                         <b><a href="index.html" target="_blank">The Prōject Team</a></b>.
                     </p>
-  
-                </div>
-  
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="linkedin" href="https://www.linkedin.com/company/theprojectteamsrm/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a class="youtube" href="mailto:projectteam.srmktr@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                        <li><a class="github" href="https://github.com/TheProjectTeamSRM" target="_blank"><i
-                                    class="fa fa-github"></i></a></li>
-                        <li><a class="instagram" href="https://instagram.com/the_project_team?igshid=1pfeuhnh6v588" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="facebook" href="https://m.facebook.com/theprojectteamsrm/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a class="youtube" href="https://www.youtube.com/channel/UCJL_Mms0MdJ2zaqzC2no8Lw" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
                 </div>
     </footer>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+  apiKey: "AIzaSyAYPq_F1gFFs1LhcOW-zi9Cte2v1QIycfM",
+  authDomain: "sma-siic.firebaseapp.com",
+  projectId: "sma-siic",
+  storageBucket: "sma-siic.appspot.com",
+  messagingSenderId: "937860892487",
+  appId: "1:937860892487:web:ab838bf9b3a9f35043ee62",
+  measurementId: "G-TW74XVBTG2"
+};
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    window.db=firebase.firestore();
+  </script>
       <script src="js/main.js"></script>
+  
+      
   
       <!-- skills script  -->
       <script src="js/skills.js"></script>
@@ -411,5 +215,18 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"
       ></script>
+
+      <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("slotData").style.display = "block";
+        }
+        </script>
   </body>
 </html>
