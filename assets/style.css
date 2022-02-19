@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  background-image: linear-gradient(-45deg, #39a2db 0%, #a2dbfa 100%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.2rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.input-field input:placeholder-shown {
+  color: #aaa;
+  font-weight: 500;
+}
+.btn {
+  width: 150px;
+  height: 49px;
+  outline: none;
+  border: none;
+  border-radius: 48px;
+  background-color: #79d0ff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #39a2db;
+}
+
+.admin-login {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+form.login-form {
+  z-index: 2;
+}
+
+.image {
+  position: absolute;
+  width: 40%;
+  top: 30%;
+  left: 10%;
+}
+
+.panels-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left-panel {
+  padding: 3rem 17% 2rem 12%;
+}
+
+#forgetPass {
+  font-size: 12px;
+}
+
+#siicLogo {
+  position: absolute;
+  width: 20%;
+  top: 05%;
+  left: 56%;
+}
+#fabLogo {
+  position: absolute;
+  width: 15%;
+  top: 05%;
+  left: 80%;
+}
+
+#acknolegement {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 80%;
+  left: 68%;
+}
+
+#tptLogo {
+  position: absolute;
+  width: 30%;
+  top: 75%;
+  left: 55%;
+}
